@@ -1,0 +1,14 @@
+<?php
+/* @var $block Magento\Framework\View\Element\Template */
+?>
+<div class="related-product-minicart" id="related-product-minicart" data-bind="scope: 'minicart-related'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "#related-product-minicart": {
+            "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+        }
+    }
+</script>

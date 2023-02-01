@@ -1,0 +1,20 @@
+<!-- ko foreach: items -->
+    <!-- ko if: $data.related_products.length > 0 -->
+    <h3 class="related-parent">Related products for:</h3>
+    <h2 data-bind="text: name"></h2>
+    <div class="wrapp-el">
+    <!-- ko foreach: $data.related_products -->
+        <div class="related-wrapper">
+            <img data-bind="attr: {src: small_image.url }">
+            <a data-bind="attr: {href: '/' + $data.url_key + '.html' }">
+            <span data-bind="text: $data.name"></span>
+            </a>
+            <button class="add-related-to-cart" data-bind="attr: {'data-product-id' :$data.id }">Add to cart</button>
+        </div>
+    <!-- /ko -->
+</div>
+<!-- /ko -->
+<!-- /ko -->
+
+
+
